@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "script.js"></script>
+    <script src = "script.js" defer></script>
     <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "https://github.com/cadsondemak/itim/blob/master/fonts/Itim-Regular.ttf">   
     <title>Rock Paper Scissor</title>
 </head>
 <body>
@@ -14,15 +15,17 @@
     <div id = "gameplay">
     <div class="container">
         <div id="buttons">
-            <button class = "pics f" id="rock"><img src = "images/rock.jpg"></button>
-            <button class = "pics" id="paper"><img src = "images/paper.jpg"></button>
-            <button class = "pics l" id="scissor"><img src = "images/scissor.png"></button>
+            <button type = "button" class = "pics f" id="rock"><img src = "images/rock.png"></button>
+            <button type = "button" class = "pics" id="paper"><img src = "images/paper.png"></button>
+            <button type = "button" class = "pics l" id="scissor"><img src = "images/scissor.png"></button>
         </div>
         <div class="score">
-            <div>Player Score: 0</div>
-            <div>Bot Score: 0</div>
+            <div>Player Score: <span id = "player">0</span></div>
+            <div>Bot Score: <span id = "bot">0</span></div>
         </div>
     </div>
+    
     </div>
+    <div id="footer">Let The Game Begin</div>
 </body>
 </html>
