@@ -8,12 +8,23 @@ footer.textContent = "Let The Game Begin"
 
 buttons = document.querySelectorAll(".pics")
 console.log(buttons)
-while()
+// while(true)
+// {
+    // while(playerScore != 5 && botScore != 5)
+    // {
 for(let i = 0; i<buttons.length; i++)
 {
     buttons[i].addEventListener("click",()=>game(buttons[i].id))
 }
+    // }
+reset()
 
+
+function reset()
+{
+    playerScore = 0
+    botScore = 0
+}
 function game(p_choice)
 {
     const options = ["rock","paper","scissor"]
@@ -48,4 +59,14 @@ function game(p_choice)
     console.log(botScore)
     bot.textContent = botScore
     player.textContent = playerScore
+    if(playerScore == 5)
+    {
+        footer.textContent = "You won the game congrats"
+        reset()
+    }
+    if(botScore == 5)
+    {
+        footer.textContent = "You lost the game. Better Luck Next Time"
+        reset()
+    }
 }
