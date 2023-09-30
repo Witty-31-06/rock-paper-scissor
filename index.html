@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src = "script.js"></script>
-    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+    <title>Rock Paper Scissor</title>
 </head>
 <body>
-    <div>
-        <h1>
-            Play the game in dev console
-        </h1>
+    <header id = "header">
+        <div class="content">Rock Paper Scissor</div>
+    </header>
+    <div id = "gameplay">
+    <div class="container">
+        <div id="buttons">
+            <button class = "pics f" id="rock"><img src = "images/rock.jpg"></button>
+            <button class = "pics" id="paper"><img src = "images/paper.jpg"></button>
+            <button class = "pics l" id="scissor"><img src = "images/scissor.png"></button>
+        </div>
+        <div class="score">
+            <div>Player Score: 0</div>
+            <div>Bot Score: 0</div>
+        </div>
+    </div>
     </div>
 </body>
 </html>

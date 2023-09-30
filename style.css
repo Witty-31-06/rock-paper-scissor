@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+#header .content
+{
+    font-size: 72px;
+    padding:20px;
+    margin-bottom:100px;
+}
+.container,
+#header
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: max-content;
+}
+
+.buttons
+{
+    display: flex;
+}
+
+img
+{
+    max-width: 400px;
+    max-height: 350px;
+}
+.pics
+{
+    margin:20px;
+}
+.pics.f,
+.pics.l
+{
+    margin-left:0;
+    margin-right:0;
+}
+.score
+{
+    display:flex;
+    justify-content: space-between;
+}
+.score
+{
+    font-size:30px;
+}
