@@ -3,12 +3,17 @@
     padding:0;
     font-family: 'Short Stack', cursive;
 }
+body 
+{
+    background: radial-gradient(at center, #89CFF0 , #eceeec);
+}
 #footer,
 #header .content
 {
-    font-size: 72px;
+    font-size: 62px;
     padding:20px;
-    margin-bottom:100px;
+    padding-bottom: 10px;
+    margin-bottom:80px;
 }
 #footer
 {
@@ -29,13 +34,14 @@
 }
 #footer
 {
-    margin-top:100px;
+    margin-top:50px;
+    margin-bottom:10px;
 
 }
 img
 {
-    max-width: 400px;
-    max-height: 350px;
+    max-width: 350px;
+    max-height: 300px;
     border-radius: 10px;
     padding:5px;
 }
@@ -91,9 +97,5 @@ img
     .score
     {
         font-size:20px;
-    }
-    .container
-    {
-        
     }
 }
