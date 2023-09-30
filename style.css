@@ -10,6 +10,10 @@
     padding:20px;
     margin-bottom:100px;
 }
+#footer
+{
+    font-size:50px;
+}
 #footer,
 .container,
 #header
@@ -40,12 +44,7 @@ img
     margin:20px;
     border-radius: 10px;
 }
-.pics.f,
-.pics.l
-{
-    margin-left:0;
-    margin-right:0;
-}
+
 .score
 {
     display:flex;
@@ -54,4 +53,47 @@ img
 .score
 {
     font-size:30px;
+}
+@media(max-width: 768px) 
+{
+    *, .score{
+        display:block;
+    }
+    span 
+    {
+        display:inline-block;
+    }
+    #header .content
+    {
+        text-align: center;
+        font-size:20px;
+        margin-bottom:10px;
+    }
+    #footer
+    {
+        font-size: 20px;
+        margin: 5px;
+        padding:0px;
+        text-align: center;
+    }
+    .buttons, img {
+        max-width:100px;
+        padding:0px;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    #gameplay
+    {
+        width: 200px;
+        height: 100%;
+        margin: 5px auto;
+    }
+    .score
+    {
+        font-size:20px;
+    }
+    .container
+    {
+        
+    }
 }
